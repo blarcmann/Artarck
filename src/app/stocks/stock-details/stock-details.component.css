@@ -1,0 +1,360 @@
+.example-headers-align .mat-expansion-panel-header-title, 
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper, 
+.container-wrapper {
+    position: relative;
+    background: #FFF;
+    -webkit-transition: margin .3s;
+    -o-transition: margin .3s;
+    transition: margin .3s;
+    padding-top: 56px;
+}
+
+
+.content-wrapper {}
+.detail-wrapper {
+    background: #E6E6E6;
+}
+.container {
+    position: relative;
+}
+.section-sm {
+    padding: 50px 0;
+}
+.row.gap-20 {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+h3.detail-title {
+    line-height: 1.25;
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+.detail-meta {
+    margin: 0 0 7px;
+    line-height: 1.2;
+}
+
+.detail-person {
+    margin: 30px 0 30px;
+}
+
+.detail-person .content {
+    margin-left: 50px;
+    color: #999;
+}
+
+.detail-person a {
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    font-size: 15px;
+}
+.block {
+    display: block;
+}
+
+.detail-sm-section:not(:last-child) {
+    margin: 0 0 30px;
+}
+
+.detail-sm-section h4 {
+    line-height: 1.15;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.detail-sm-section a {
+    color: #868686;
+}
+
+.detail-sm-section a:hover {
+    text-decoration: underline;
+}
+.detail-sm-section a.detail-collection {
+    display: inline-block;
+    background: #D4D4D4;
+    line-height: 1;
+    padding: 7px 12px 6px;
+    margin-bottom: 2px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.detail-image a {
+    color: #EDB200;
+}
+
+.detail-image a:hover {
+    color: #FFBF00;
+}
+.mt-15 {
+    margin-top: 15px !important
+}
+.mr-15 {
+    margin-right: 15px !important
+}
+.social-share a {
+    color: #999;
+    float: left;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #CCC;
+    line-height: 1;
+}
+
+.social-share a:last-child {
+    border-right: 0;
+}
+
+.social-share a span.block {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.social-share a:hover {
+    color: #EDB200;
+}
+.social-share a.social-facebook {
+    color: #3b5998;
+}
+
+.social-share a.social-twitter {
+    color: #00aced;
+}
+
+.social-share a.social-instagram {
+    color: #cb2027;
+}
+
+.detail-tab ul.nav-tabs {
+    border-bottom: 1px solid #CCC;
+    margin: 0 0 25px;
+}
+
+.detail-tab ul.nav-tabs > li a {
+    border-radius: 0;
+    color: #999;
+}
+
+.detail-tab ul.nav-tabs > li.active a,
+.detail-tab ul.nav-tabs > li a:hover {
+    background: none;
+    color: #333;
+    border: 1px solid #CCC;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    zoom: 1;
+}
+.nav {
+    display: block;
+}
+
+.detail-tab ul.nav-tabs {
+    border-bottom: 1px solid #CCC;
+    margin: 0 0 25px;
+}
+
+.detail-tab ul.nav-tabs > li a {
+    border-radius: 0;
+    color: #999;
+}
+
+.detail-tab ul.nav-tabs > li.active a,
+.detail-tab ul.nav-tabs > li a:hover {
+    background: none;
+    color: #333;
+    border: 1px solid #CCC;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.detail-tab ul.nav-tabs > li.active a,
+.detail-tab ul.nav-tabs > li a:hover {
+    background: none;
+    color: #333;
+    border: 1px solid #CCC;
+    border-bottom: 1px solid #E6E6E6;
+}
+.mb-10 {
+    margin-bottom: 10px !important
+}
+.detail-radio-wrapper .radio-block {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+
+.detail-radio-wrapper .radio-block:first-child {
+    border-top: 1px solid #CCC;
+    padding-top: 7px;
+}
+
+.btn-primary {
+    background: #FFBF00;
+    border-color: #FFBF00;
+    border-width: 2px;
+    color: #333 !important;
+}
+
+.btn-primary:hover {
+    background: #EDB200;
+    border-color: #EDB200;
+}
+.btn-lg {
+    height: 50px;
+    font-size: 17px;
+    padding-top: 13px;
+}
+.mb-0 {
+    margin-bottom: 0 !important
+}
+.mt-15 {
+    margin-top: 15px !important
+}
+
+/* .detail-radio-wrapper .radio-block input[type='radio'] + label {
+    background: url(/assets/css/images/radio_unchecked.png) left 8px no-repeat;
+}
+
+.detail-radio-wrapper .radio-block input[type='radio']:checked + label {
+    background: url(/assets/css/images/radio_checked.png) left 8px no-repeat;
+} */
+
+.mb-30 {
+    margin-bottom: 30px !important
+}
+
+.checkbox-block label,
+.radio-block label {
+    display: block;
+}
+
+.detail-price-sm {
+    display: block;
+    position: relative;
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.detail-price-sm .price {
+    position: absolute;
+    float: left;
+    top: 2px;
+    right: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #868888;
+}
+
+.detail-price-sm .block {
+    color: #868686;
+    font-weight: 700;
+    font-size: 14px;
+}
+.uppercase, upper {
+    text-transform: uppercase;
+}
+
+.block {
+    display: block;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important
+}
+.mb-30-sm {
+        margin-bottom: 30px !important
+}
+
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+    outline: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.gap-20 .col-sm-1,
+.gap-20 .col-sm-2,
+.gap-20 .col-sm-3,
+.gap-20 .col-sm-4,
+.gap-20 .col-sm-5,
+.gap-20 .col-sm-6,
+.gap-20 .col-sm-7,
+.gap-20 .col-sm-8,
+.gap-20 .col-sm-9,
+.gap-20 .col-sm-10,
+.gap-20 .col-sm-11,
+.gap-20 .col-sm-12,
+.gap-20 .col-md-1,
+.gap-20 .col-md-2,
+.gap-20 .col-md-3,
+.gap-20 .col-md-4,
+.gap-20 .col-md-5,
+.gap-20 .col-md-6,
+.gap-20 .col-md-7,
+.gap-20 .col-md-8,
+.gap-20 .col-md-9,
+.gap-20 .col-md-10,
+.gap-20 .col-md-11,
+.gap-20 .col-md-12 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .wrapper,
+    .container-wrapper {
+        padding-top: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (max-width: 767px) {
+    .detail-person {
+        margin: 30px 0 0;
+    }
+}
+
+@media (max-width: 479px) {}

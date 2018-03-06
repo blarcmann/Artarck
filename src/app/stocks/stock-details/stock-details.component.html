@@ -1,0 +1,317 @@
+<!-- <mat-accordion class="example-headers-align">
+  <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Stock Features
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-icon>account_circle</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="number" min="1" placeholder="Age">
+    </mat-form-field>
+
+    <mat-action-row>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Subscription
+      </mat-panel-title>
+      <mat-panel-description>
+        <mat-icon>map</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="Country">
+    </mat-form-field>
+
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Sizes
+      </mat-panel-title>
+      <mat-panel-description>
+        Inform the date you wish to travel
+        <mat-icon>date_range</mat-icon>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="Date" [matDatepicker]="picker" (focus)="picker.open()" readonly>
+    </mat-form-field>
+    <mat-datepicker #picker></mat-datepicker>
+
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">End</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+</mat-accordion> -->
+<app-header></app-header>
+<div class="wrapper container-wrapper">
+    <div class="content-wrapper">
+        <div class="detail-wrapper">
+            <div class="container">
+                <div class="section-sm">
+                    <div class="row">
+                        <router-outlet></router-outlet>
+                        <div class="col-xs-12 col-sm-12 col-md-3">
+                            <div class="row gap-20">
+
+                                <div class="col-xs-12 col-sm-6 col-md-12 mb-30-sm">
+
+                                    <h3 class="detail-title">Stock: A man messing around with Messi</h3>
+                                    <p class="detail-meta">* Stock ID: #00000653</p>
+                                    <p class="detail-meta">* Uploaded date: February 17, 2018</p>
+                                    <div class="detail-person clearfix">
+                                        <!-- <div class="image">
+                                        <img src="images/testimonial/01.jpg" alt="Images" class="img-circle" />
+                                    </div>  -->
+                                        <div class="content">
+                                            Stock Author:
+                                            <a href="#" class="block">Andy-Imabong Art</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-12 mb-30-sm">
+
+                                    <div class="detail-sm-section">
+                                        <h4>Keywords:</h4>
+                                        <a href="#" class="detail-collection">Football</a>
+                                        <a href="#" class="detail-collection">Number 10</a>
+                                        <a href="#" class="detail-collection">Best Ever</a>
+                                    </div>
+
+                                    <div class="detail-sm-section">
+                                        <h4>Tags:</h4>
+                                        <a href="#" class="detail-keyword">Computer</a>,
+                                        <a href="#" class="detail-keyword">Desktop</a>,
+                                        <a href="#" class="detail-keyword">Monitor</a>,
+                                        <a href="#" class="detail-keyword">Techonolgy</a>,
+                                        <a href="#" class="detail-keyword">Desktop</a>,
+                                        <a href="#" class="detail-keyword">Monitor</a>,
+                                        <a href="#" class="detail-keyword">Notebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-9">
+
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-6 col-md-7 mb-30-sm">
+                                    <div class="detail-image">
+                                        <!--A little bit of work will still be done down here  -->
+                                        <img src="./assets/stocks/stock(13).png" class="img-responsive" alt="{{selectedStock.description}}" />
+                                        <!--A little bit of work will still be done down here  -->
+
+                                        <div class="mt-15">
+                                            <a href="#" class="mr-15"><i class="fa fa-star"></i> Save to my Favorites box</a>
+                                            <a href="#" class="mr-15"><i class="fa fa-download"></i> Download preview</a>
+                                            <a href="#"><i class="fa fa-search"></i> Find Similar</a>
+                                        </div>
+
+                                        <div class="social-share clearfix">
+                                            <a href="#" class="social-facebook">
+														<span class="block">
+															<i class="fa fa-facebook-official"></i> 2053
+														</span>
+														share on facebook
+													</a>
+                                            <a href="#" class="social-twitter">
+														<span class="block">
+															<i class="fa fa-twitter"></i> 9983
+														</span>
+														share on twitter
+													</a>
+                                            <a href="#" class="social-instagram">
+														<span class="block">
+															<i class="fa fa-instagram"></i> 2983
+														</span>
+														share on instagram
+													</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-5">
+
+                                    <div class="detail-tab">
+
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#detail-tab-1" data-toggle="tab">Stock Features</a></li>
+                                            <li role="presentation"><a href="#detail-tab-2" data-toggle="tab">Subscription</a></li>
+                                            <li role="presentation"><a href="#detail-tab-3" data-toggle="tab">Credits</a></li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+
+                                            <div role="tabpanel" class="tab-pane fade in active" id="detail-tab-1">
+
+                                                <p class="mb-10">Download any sizes at one price</p>
+
+                                                <div class="detail-radio-wrapper mb-30">
+
+                                                    <div class="radio-block">
+                                                        <input id="radio_subscribe-1" name="radio_subscribe" type="radio" class="radio" value="First Choice" checked />
+                                                        <label class="" for="radio_subscribe-1">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">5 images per day</span>
+																		7 days free trial
+																		<span class="price">#0</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                    <div class="radio-block">
+                                                        <input id="radio_subscribe-2" name="radio_subscribe" type="radio" class="radio" value="First Choice" />
+                                                        <label class="" for="radio_subscribe-2">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">10 images per day</span>
+																		#10 per image
+																		<span class="price">#50</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                    <div class="radio-block">
+                                                        <input id="radio_subscribe-3" name="radio_subscribe" type="radio" class="radio" value="First Choice" />
+                                                        <label class="" for="radio_subscribe-3">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">15 images per day</span>
+																		#10 per image
+																		<span class="price">#80</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                </div>
+
+                                                <a href="#" class="btn btn-primary btn-lg btn-block"><i class="fa fa-download"></i> Download this photo</a>
+
+                                                <p class="mb-0 mt-15">Includes our <a href="#">our standard license</a></p>
+
+                                            </div>
+
+                                            <div role="tabpanel" class="tab-pane fade" id="detail-tab-2">
+
+                                                <p class="mb-10">Download as credits you pay</p>
+
+                                                <div class="detail-radio-wrapper mb-30">
+
+                                                    <div class="radio-block">
+                                                        <input id="radio_credit-1" name="radio_credit" type="radio" class="radio" value="First Choice" checked />
+                                                        <label class="" for="radio_credit-1">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">Small - 640 x 427 px</span>
+																		7 images / #20 per image
+																		<span class="price">#100</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                    <div class="radio-block">
+                                                        <input id="radio_credit-2" name="radio_credit" type="radio" class="radio" value="First Choice" />
+                                                        <label class="" for="radio_credit-2">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">Meidum - 1200 x 1053 px</span>
+																		15 images / #20 per image
+																		<span class="price">#200</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                    <div class="radio-block">
+                                                        <input id="radio_credit-3" name="radio_credit" type="radio" class="radio" value="First Choice" />
+                                                        <label class="" for="radio_credit-3">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">Large - 2400 x 1824 px</span>
+																		23 images / $20 per image
+																		<span class="price">#300</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                </div>
+
+                                                <a href="#" class="btn btn-primary btn-lg btn-block"><i class="fa fa-download"></i> Download this photo</a>
+
+                                                <p class="mb-0 mt-15">Includes &amp; accept our <a href="#">our standard license</a></p>
+
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane fade" id="detail-tab-3">
+
+                                                <p class="mb-10">Download a single image based on size</p>
+
+                                                <div class="detail-radio-wrapper mb-30">
+
+                                                    <div class="radio-block">
+                                                        <input id="radio_size-1" name="radio_size" type="radio" class="radio" value="First Choice" checked />
+                                                        <label class="" for="radio_size-1">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">Small</span>
+																		640 x 427 px | 8.0" x 5.9" @ 72 Dpi image
+																		<span class="price">#10</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                    <div class="radio-block">
+                                                        <input id="radio_size-2" name="radio_size" type="radio" class="radio" value="First Choice" />
+                                                        <label class="" for="radio_size-2">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">Meidum</span>
+																		640 x 427 px | 8.0" x 5.9" @ 72 Dpi image
+																		<span class="price">#20</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                    <div class="radio-block">
+                                                        <input id="radio_size-3" name="radio_size" type="radio" class="radio" value="First Choice" />
+                                                        <label class="" for="radio_size-3">
+																	<span class="detail-price-sm">
+																		<span class="block uppercase">Large</span>
+																		640 x 427 px | 8.0" x 5.9" @ 72 Dpi image
+																		<span class="price">#50</span>
+																	</span>
+																</label>
+                                                    </div>
+                                                </div>
+
+                                                <a href="#" class="btn btn-primary btn-lg btn-block"><i class="fa fa-download"></i> Download this photo</a>
+
+                                                <p class="mb-0 mt-15">Includes &amp; accept <a href="#">our standard license</a></p>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

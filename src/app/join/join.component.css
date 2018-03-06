@@ -1,0 +1,23 @@
+
+.fullContainer {
+    position: absolute;
+    width: 100%;
+    height: 100% !important;
+    background: url("/assets/images/art2.png") no-repeat scroll center center/cover;
+    font-size: 110%;
+}
+
+.row {
+    margin-top: 15%;
+}
+
+mat-label {
+    font-weight: bolder;
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+mat-form-field {
+    width: 95%;
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+    margin: 1% 0; 
+}
+

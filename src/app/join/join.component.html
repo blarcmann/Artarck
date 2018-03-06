@@ -1,0 +1,131 @@
+<div class="fullContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+                <!-- <mat-toolbar color="primary">
+                    <span>Application Title</span>
+                </mat-toolbar> -->
+                <mat-vertical-stepper [linear]="isLinear">
+
+                    <mat-step [stepControl]="firstFormGroup">
+                        <form [formGroup]="firstFormGroup">
+                            <ng-template matStepLabel>Account Setup</ng-template>
+                            <mat-form-field>
+                                <mat-label>Username</mat-label>
+                                <input matInput placeholder="MaxGraphics" formControlName="firstCtrl" required>
+                            </mat-form-field>
+
+                            <mat-form-field [floatLabel]="options.value.floatLabel">
+                                <mat-label>Email Address</mat-label>
+                                <input matInput placeholder="graphicsmax@matgraphics.com" [formControl]="email" required>
+                                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <input matInput placeholder="Enter password" [type]="hide ? 'password' : 'text'" required>
+                                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <input matInput placeholder="Confirm password" [type]="hide ? 'password' : 'text'" required>
+                                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                            </mat-form-field>
+
+                            <div>
+                                <button mat-button matStepperNext>Proceed</button>
+                            </div>
+                        </form>
+                    </mat-step>
+
+
+                    <mat-step [stepControl]="secondFormGroup">
+                        <form [formGroup]="secondFormGroup">
+                            <ng-template matStepLabel class="stepLabel">Social Profies</ng-template>
+
+                            <mat-form-field>
+                                <mat-label>
+                                    <mat-icon> facebook </mat-icon> Facebook</mat-label>
+                                <input matInput placeholder="Facebook Id" formControlName="secondCtrl" required>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>
+                                    <mat-icon> twitter </mat-icon> Twitter</mat-label>
+                                <input matInput placeholder="Twitter Id" formControlName="secondCtrl" required>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>
+                                    <mat-icon> instagram </mat-icon> Instagram</mat-label>
+                                <input matInput placeholder="Instagram Id" formControlName="secondCtrl" required>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>
+                                    <mat-icon> github </mat-icon> Github</mat-label>
+                                <input matInput placeholder="Github Id" formControlName="secondCtrl" required>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>
+                                    <mat-icon> others </mat-icon> Please specitfy</mat-label>
+                                <input matInput placeholder="Others" formControlName="secondCtrl" required>
+                            </mat-form-field>
+
+                            <div>
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Proceed</button>
+                            </div>
+                        </form>
+                    </mat-step>
+
+
+
+                    <mat-step [stepControl]="thirdFormGroup">
+                        <form [formGroup]="thirdFormGroup">
+                            <ng-template matStepLabel class="stepLabel">Personal Details</ng-template>
+
+                            <mat-form-field>
+                                <mat-label>FirstName</mat-label>
+                                <input matInput placeholder="First name" formControlName="thirdCtrl" required>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>LastName</mat-label>
+                                <input matInput placeholder="Last name" formControlName="thirdCtrl" required>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>Phone Number</mat-label>
+                                <input matInput placeholder="Phone number" type="tel" formControlName="thirdCtrl" required>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                <mat-label>Address</mat-label>
+                                <textarea matInput placeholder="Address"></textarea>
+                            </mat-form-field>
+                            <div>
+                                <button mat-button matStepperPrevious>Back</button>
+                                <button mat-button matStepperNext>Proceed</button>
+                            </div>
+                        </form>
+                    </mat-step>
+
+
+                    <mat-step>
+                        <ng-template matStepLabel class="stepLabel">Done</ng-template>
+                        <mat-card>We're all done here...cheers!</mat-card>
+                        <div>
+                            <button mat-button matStepperPrevious>Back</button>
+                            <button mat-button matStepperComplete>Finish</button>
+                        </div>
+                    </mat-step>
+
+                </mat-vertical-stepper>
+                <!-- <mat-toolbar color="primary">
+                    <span>Made with <i class="glyphicon glyphicon-heart"></i> by OnukInk</span>
+                </mat-toolbar> -->
+            </div>
+        </div>
+    </div>
+</div>

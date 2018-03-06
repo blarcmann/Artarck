@@ -1,0 +1,29 @@
+ .column {
+  flex: 23%;
+  /* max-width: 25%; */
+  padding: 0 4px;
+} 
+
+.column img {
+  flex: 25%;
+  max-width: 23%;
+  padding: 0 10px;
+  float: left !important;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+  .column img{
+    flex: 49%;
+    padding: 1%;
+    max-width: 49%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column img{
+    flex: 98%;
+    padding: 2%;
+     max-width: 100%; 
+  }
+}
